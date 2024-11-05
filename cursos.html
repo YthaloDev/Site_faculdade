@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://localhost/php/Site_Escola/Site_escola_projeto/cursos.php -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cursos_files/stylecurso.css">
+    <title>Formulario</title>
+<script>
+    window.onload = function() {
+        // Seleciona ambos os botões e áreas de links
+        const buttons = document.querySelectorAll("#toggle-math, #toggle-science");
+        const linksSections = document.querySelectorAll(".links-math, .links-science");
+
+        // Adiciona o evento de clique em cada botão correspondente à sua seção de links
+        buttons.forEach((button, index) => {
+            button.addEventListener("click", function() {
+                console.log("Botão foi clicado!"); // Verificar se o evento está funcionando
+                linksSections[index].classList.toggle("hidden"); // Alterna a classe "hidden" para mostrar/esconder os links
+            });
+        });
+    };
+</script><style type="text/css" id="operaUserStyle"></style></head>
+
+
+
+
+<body>
+<header>
+        <div class="logo">
+            <h1>Home Page</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://localhost/php/Site_Escola/Site_escola_projeto/index.php">Home</a></li>
+                <li><a href="http://localhost/php/Site_Escola/Site_escola_projeto/cursos.php#sobre">Sobre</a></li>
+                <li><a href="http://localhost/php/Site_Escola/Site_escola_projeto/cursos.php">Cursos</a></li>
+                <li><a href="http://localhost/php/Site_Escola/Site_escola_projeto/cadastro.php">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <header><h1>CURSOS</h1></header>
+    <div class="container">
+        <div class="math">
+            <button id="toggle-math" aria-expanded="true" type="button" aria-disabled="false" class="_rg43ryz">
+            <img src="./cursos_files/math.png-444b34-128c.png" width="45" height="45" class="_fmdt9s" alt="">
+            <h4>​ Matemática Anos Finais </h4><h4>
+            <span class="_ufibmvg"></span>
+            </h4></button>
+
+            <div class="links-math">
+
+                    <li><a class="_1jh3hava" href="http://localhost/php/Site_Escola/Site_escola_projeto/math-6-ano.php">6° ano</a></li>
+                    <li><a class="_1jh3hava" href="http://localhost/php/Site_Escola/Site_escola_projeto/math-8-ano.php">8° ano</a></li>
+                    <li><a class="_1jh3hava" href="http://localhost/php/Site_Escola/Site_escola_projeto/math-7-ano.php">7° ano</a></li>
+                    <li><a class="_1jh3hava" href="http://localhost/php/Site_Escola/Site_escola_projeto/math-9-ano.php">9° ano</a></li>
+
+            </div>
+        </div>
+
+
+        <div class="science">
+            <button id="toggle-science" aria-expanded="true" type="button" aria-disabled="false" class="_rg43ryz">
+                <img src="./cursos_files/math.png-444b34-128c.png" width="45" height="45" class="_fmdt9s" alt="">
+                <h4>​ Português Anos Finais​​​ </h4>
+                <span class="_ufibmvg"></span>
+            </button>
+
+            <div class="links-science">
+                <li><a class="_1jh3hava" href="http://localhost/php/Site_Escola/Site_escola_projeto/port-6-ano.php">6° ano</a></li>
+
+                <li><a class="_1jh3hava" href="http://localhost/php/Site_Escola/Site_escola_projeto/port-8-ano.php">8° ano</a></li>
+
+                <li><a class="_1jh3hava" href="http://localhost/php/Site_Escola/Site_escola_projeto/port-7-ano.php">7° ano</a></li>
+
+                <li><a class="_1jh3hava" href="http://localhost/php/Site_Escola/Site_escola_projeto/port-9-ano.php">9° ano</a></li>
+            </div>
+        </div>
+
+    </div>
+
+
+</body></html>
